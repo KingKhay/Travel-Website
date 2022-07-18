@@ -37,6 +37,8 @@ html{
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    padding:15px;
+    flex-wrap: wrap;
 }
 
 .header span{
@@ -45,23 +47,23 @@ html{
     font-size: 1.5rem;
 }
 
+.header #icon{
+    display: none;
+    list-style-type: none;
+}
+
 .header ul{
     list-style-type: none;
     display: flex;
-}
-
-.header li{
-    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
 .header li a{
     text-decoration: none;
     font-weight: bold;
     color: white
-}
-
-.header #icon{
-    display: none;
 }
 
 .header-link{
@@ -180,25 +182,27 @@ html{
 /* Media Queries for Mobile Version */
 
 @media screen and (max-width:768px){
+
     .header span{
         font-size: 2.5rem;
     }
-    .hide{
+    .header ul{
         display: none;
+        width: 100%;
     }
 
     .header #icon{
         display: block;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: black;
     }
 
     .title h1{
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
     .title h2{
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .explore-cards{
